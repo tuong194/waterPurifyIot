@@ -3,7 +3,7 @@ name: build and test
 on:
   push:
     branches:
-      - esp-idf
+      - dev
 
 jobs:
   build: 
@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4 
+        with:
+          submodules: recursive
 
       - name: Install ESP-IDF
         uses: espressif/install-esp-idf-action@v1
