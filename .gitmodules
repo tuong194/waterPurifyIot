@@ -1,0 +1,3 @@
+[submodule "EmbeddedCore/IOTCoreBase"]
+	path = EmbeddedCore/IOTCoreBase
+	url = https://github.com/tuong194/IOTCore.git

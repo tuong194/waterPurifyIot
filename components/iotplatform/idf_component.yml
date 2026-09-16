@@ -1,0 +1,9 @@
+dependencies:
+  # PINNED ON PURPOSE. "*" means "newest at build time", so two people building
+  # the same commit on different days get different code -- and a bug report can
+  # then come from a version you cannot reproduce. "~1.11.0" accepts bug-fix
+  # releases (1.11.1, 1.11.2) but not 1.12.0, which could change behaviour.
+  #
+  # Bump this deliberately during a distribution sync, then rebuild and re-test.
+  espressif/mdns:
+    version: "~1.11.0"

@@ -1,0 +1,26 @@
+name: build and test
+
+on:
+  push:
+    branches:
+      - esp-idf
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4 
+
+      - name: Install ESP-IDF
+        uses: espressif/install-esp-idf-action@v1
+        with:
+          version: v5.5.5
+
+      - name: Build for ESP32-C3
+        run: |
+          idf.py set-target esp32c3
+          idf.py build
+
+

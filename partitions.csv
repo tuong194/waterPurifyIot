@@ -1,0 +1,17 @@
+# Name,         Type,   SubType,    Offset,     Size,     Flags
+# Total: 3896k used, 164k unallocated (4MB flash)
+nvs,            data,   nvs,              ,     48k
+ble_mesh,       data,   nvs,              ,     0x8000
+otadata,        data,   ota,              ,     8k,       encrypted
+phy_init,       data,   phy,              ,     4k,       encrypted
+ota_0,          app,    ota_0,            ,     1900k,    encrypted
+ota_1,          app,    ota_1,            ,     1900k,    encrypted
+rogo,           data,   nvs,              ,     120k, 
+nvs_key,        data,   nvs_keys,         ,     4k,       encrypted
+
+#nvs,            data,   nvs,              ,  	0x00C000,
+#ble_mesh,       data,   nvs,              ,     0x8000
+#phy_init,       data,   phy,              ,  	0x004000, encrypted
+#factory,        app,    factory,          ,     0x257000,
+#rogo,           data,   nvs,              ,     120k,
+#nvs_key,        data,   nvs_keys,         ,     4k,       encrypted
